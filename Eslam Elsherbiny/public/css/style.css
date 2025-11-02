@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f7f8fc;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+nav {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #8c1bab;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #8c1bab;
+  box-shadow: 0 0 0 4px rgba(140, 27, 171, 0.1);
+  outline: none;
+}
+
+.btn,
+button {
+  display: inline-block;
+  background: linear-gradient(45deg, #f761a1 0%, #8c1bab 100%);
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(140, 27, 171, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+button[type="submit"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn:hover,
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(140, 27, 171, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #f761a1 0%, #8c1bab 100%);
+  box-shadow: 0 4px 15px rgba(140, 27, 171, 0.2);
+}
+
+.btn-edit {
+  background: linear-gradient(45deg, #ffc107 0%, #f78f1e 100%);
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 160, 0, 0.2);
+}
+
+.btn-edit:hover {
+  box-shadow: 0 6px 20px rgba(255, 160, 0, 0.3);
+}
+
+.btn-delete {
+  background: linear-gradient(45deg, #e53935 0%, #f761a1 100%);
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.2);
+}
+
+.btn-delete:hover {
+  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+thead {
+  background: #f9f9fb;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #eee;
+  font-size: 0.8rem;
+  color: #8c1bab;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fcfcff;
+}
+
+tbody tr:hover {
+  background-color: #f7f2fa;
+}
+
+td.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+td.actions form {
+  margin: 0;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border-radius: 12px;
+}
+
+.search-bar button {
+  border-radius: 99px;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.alert-success {
+  background: #eafbf4;
+  color: #00796B;
+  border-color: #b2dfdb;
+}
+
+.alert-error {
+  background: #fff0f0;
+  color: #c91c1c;
+  border-color: #ffcdd2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+}
